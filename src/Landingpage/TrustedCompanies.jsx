@@ -102,8 +102,7 @@ const LogoCarousel = () => {
         margin: "auto",
         overflow: "hidden",
         textAlign: "center",
-        padding:"10rem 0rem",
-        
+        padding: "5rem 0rem 10rem 0rem",
       }}
     >
       <Box mb="30px">

@@ -86,7 +86,14 @@ const SpecificModes = () => {
         padding: "5rem 0rem",
       }}
     >
-      <Typography fontSize="36px" fontWeight="700" mb={5}>
+      <Typography
+        fontSize="36px"
+        fontWeight="700"
+        mb={5}
+        fontFamily="__Mulish_aeca05, __Mulish_Fallback_aeca05"
+        lineHeight="45px"
+        letterSpacing="normal"
+      >
         Specific kiosk modes for unique use cases
       </Typography>
       <Tabs

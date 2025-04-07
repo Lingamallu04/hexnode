@@ -33,7 +33,7 @@ const Feedback = () => {
         width: "87%",
         margin: "auto",
         overflow: "hidden",
-        paddingBottom: "50px",
+        paddingBottom: { xs: "13rem", md: "5rem" },
       }}
     >
       <Typography
@@ -52,8 +52,9 @@ const Feedback = () => {
 
       <Box
         sx={{
-          width: {xs:"100%",md:"75%"},
+          width: { xs: "100%", md: "75%" },
           margin: "auto",
+          height: "320px",
           border: "1px solid transparent",
           borderRadius: "10px !important",
           boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
@@ -77,7 +78,7 @@ const Feedback = () => {
               <Stack
                 direction={{ xs: "column", md: "row" }}
                 alignItems="center"
-                spacing={4}
+                spacing={1}
               >
                 <Box>
                   <img
@@ -85,7 +86,7 @@ const Feedback = () => {
                     alt={testimonial.name}
                     style={{
                       width: "100%",
-                      height: "100%",
+                      height: "320px",
                       objectFit: "cover",
                     }}
                   />

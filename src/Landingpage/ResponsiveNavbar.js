@@ -10,6 +10,8 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "./index.module.css";
+import Logo from "../assets/images/Hexnode_logo.png";
+import WhiteLogo from "../assets/images/Hexnode_white.png";
 
 const Navbar = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -80,10 +82,11 @@ const Navbar = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Typography variant="h4" sx={{ color: textColor }}>
-          hexnode
-        </Typography>
-
+        {isScrolled || isHovered ? (
+          <img src={Logo} alt="" width="150px" height="auto" />
+        ) : (
+          <img src={WhiteLogo} alt="" width="150px" height="auto" />
+        )}
         <Button className={styles.freeTrailBtn}>14 DAY FREE TRAIL</Button>
       </Grid>
       <Grid
@@ -94,9 +97,11 @@ const Navbar = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Typography variant="h4" sx={{ color: textColor }}>
-          hexnode
-        </Typography>
+        {isScrolled || isHovered ? (
+          <img src={Logo} alt="" width="150px" height="auto" />
+        ) : (
+          <img src={WhiteLogo} alt="" width="150px" height="auto" />
+        )}
 
         <Grid item>
           <IconButton onClick={toggleDrawer(true)}>

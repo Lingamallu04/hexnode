@@ -9,12 +9,22 @@ const SecondBox = () => {
       style={{
         paddingTop: "10rem 0rem 8rem 0rem",
         backgroundColor: "#020919",
-        marginTop:"70px"
+        marginTop: "70px",
       }}
     >
-      <Grid container sx={{ width: "87%", margin: "auto" }}>
+      <Grid
+        container
+        sx={{
+          width: "87%",
+          margin: "auto",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+        spacing={8}
+      >
         <Grid
-          size={{xs:12,md:6}}
+          size={{ xs: 12, lg: 6 }}
           sx={{ backgroundColor: "#020919" }}
           className={styles.leftContent}
         >
@@ -51,7 +61,8 @@ const SecondBox = () => {
             </Box>
           </Stack>
         </Grid>
-        <Grid size={{xs:12,md:6}}>
+
+        <Grid size={{ xs: 12, lg: 6 }}>
           <img src={MobileImg} alt="" width="100%" height="100%" />
         </Grid>
       </Grid>
