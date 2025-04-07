@@ -25,7 +25,10 @@ const SecondBox = () => {
       >
         <Grid
           size={{ xs: 12, lg: 6 }}
-          sx={{ backgroundColor: "#020919" }}
+          sx={{
+            backgroundColor: "#020919",
+            marginTop: { xs: "60px !important", md: 0 },
+          }}
           className={styles.leftContent}
         >
           <Typography className={styles.mainTitle}>

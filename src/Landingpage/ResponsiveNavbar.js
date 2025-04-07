@@ -28,15 +28,11 @@ const Navbar = () => {
 
   const mobileMenuDrawer = (
     <Box
-      sx={{ width: 280 }}
+      sx={{ width: 320 ,paddingTop:"6rem"}}
       role="presentation"
       onKeyDown={toggleDrawer(false)}
     >
-      <Box sx={{ p: 2 }}>
-        {/* <BlackLogo /> */}
-        hexnode
-      </Box>
-      <Box>
+      <Box display="flex" justifyContent="center" pt={2}>
         <Button className={styles.freeTrailBtn}>14 DAY FREE TRAIL</Button>
       </Box>
     </Box>
