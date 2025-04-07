@@ -1,6 +1,5 @@
 import { Stack, Typography } from "@mui/material";
 import Grid from "@mui/material/Grid";
-
 import React from "react";
 import Idc from "../assets/images/idc.png";
 import Gart from "../assets/images/gartner.png";
@@ -15,10 +14,10 @@ const ThirdBox = () => {
         sx={{
           padding: "30px 0px",
         }}
-        spacing={1}
+        spacing={{ xs: 3, md: 1 }}
       >
         <Grid
-          size={{ xs: 12, md: 4 }}
+          size={{ xs: 12, md: 6, lg: 4 }}
           padding="0px 50px"
           borderRight="1px solid #474958"
         >
@@ -33,7 +32,7 @@ const ThirdBox = () => {
           </Stack>
         </Grid>
         <Grid
-          size={{ xs: 12, md: 4 }}
+          size={{ xs: 12, md: 6, lg: 4 }}
           padding="0px 50px"
           borderRight="1px solid #474958"
         >
@@ -47,7 +46,7 @@ const ThirdBox = () => {
             </Typography>
           </Stack>
         </Grid>
-        <Grid size={{ xs: 12, md: 4 }} padding="0px 50px">
+        <Grid size={{ xs: 12, md: 6, lg: 4 }} padding="0px 50px">
           <Stack spacing={3} maxWidth="340px">
             <span>
               <img src={Forrester} alt="" width="185px" height="28px" />

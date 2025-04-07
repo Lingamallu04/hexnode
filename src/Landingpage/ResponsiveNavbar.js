@@ -88,17 +88,19 @@ const Navbar = () => {
       </Grid>
       <Grid
         container
-        sx={{ display: { xs: "flex", lg: "none" } }}
+        sx={{
+          display: { xs: "flex", lg: "none", width: "87%", margin: "auto" },
+        }}
         justifyContent="space-between"
         alignItems="center"
       >
-        <Grid item>
-          {/* <img src={WhiteLogo} alt="" /> */}
+        <Typography variant="h4" sx={{ color: textColor }}>
           hexnode
-        </Grid>
+        </Typography>
+
         <Grid item>
           <IconButton onClick={toggleDrawer(true)}>
-            <MenuIcon sx={{ color: "var(--white-900)" }} />
+            <MenuIcon sx={{ color: textColor }} />
           </IconButton>
         </Grid>
       </Grid>

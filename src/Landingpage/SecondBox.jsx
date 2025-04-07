@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Box, Typography, Button, Stack, Grid, TextField } from "@mui/material";
 import styles from "./index.module.css";
@@ -8,22 +7,14 @@ const SecondBox = () => {
   return (
     <div
       style={{
-        paddingTop: "8rem 0rem",
+        paddingTop: "10rem 0rem 8rem 0rem",
         backgroundColor: "#020919",
+        marginTop:"70px"
       }}
     >
-      <Grid
-        container
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <Grid container sx={{ width: "87%", margin: "auto" }}>
         <Grid
-          item
-          xs={12}
-          md={6}
+          size={{xs:12,md:6}}
           sx={{ backgroundColor: "#020919" }}
           className={styles.leftContent}
         >
@@ -31,7 +22,7 @@ const SecondBox = () => {
             Turn your devices into kiosks in a few minutes with Hexnode UEM
           </Typography>
           <Stack
-            direction={{ xs: "column", md: "column", lg: "row" }}
+            direction={{ xs: "column", sm: "row", lg: "row" }}
             spacing={3}
             mt={3}
           >
@@ -60,7 +51,7 @@ const SecondBox = () => {
             </Box>
           </Stack>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{xs:12,md:6}}>
           <img src={MobileImg} alt="" width="100%" height="100%" />
         </Grid>
       </Grid>

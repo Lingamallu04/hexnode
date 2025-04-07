@@ -7,7 +7,6 @@ import MoreFeaturesImage from "../assets/images/power-image.png";
 import SecureUpdateImage from "../assets/images/secure.png";
 import styles from "./index.module.css";
 
-
 const AdditionalPossibilities = () => {
   const sections = [
     {
@@ -58,14 +57,18 @@ const AdditionalPossibilities = () => {
       <Typography
         fontSize="40px"
         fontWeight="700"
-        sx={{ width: "57%", margin: "auto", textAlign: "center" }}
+        sx={{
+          width: { xs: "100%", lg: "57%" },
+          margin: "auto",
+          textAlign: { xs: "start", md: "center" },
+        }}
         pb={5}
         pt={8}
       >
         What additional possibilities does the Kiosk mode offer?
       </Typography>
       <Grid container spacing={3}>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, lg: 6 }}>
           <img
             src={
               sections.find((section) => section.id === expandedSection).image
@@ -76,7 +79,7 @@ const AdditionalPossibilities = () => {
             style={{ width: "100%" }}
           />
         </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
+        <Grid size={{ xs: 12, lg: 6 }}>
           <Stack>
             {sections.map((section) => (
               <Fragment key={section.id}>

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import SecondBox from "./SecondBox";
 import Navbar from "./ResponsiveNavbar";
 import ThirdBox from "./ThirdBox";
@@ -45,18 +45,24 @@ const LandingPage = () => {
           style={{
             width: "87%",
             margin: "auto",
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "center",
             padding: "30px 0px",
           }}
         >
-          <Typography fontSize="12px" color="rgb(85, 101, 117)">
-            <span>Terms of Use</span>-<span>Privacy</span>-<span>Cookies</span>
-          </Typography>
-          <Typography fontSize="12px" color="rgb(85, 101, 117)">
-            Copyright © 2025 Mitsogo Inc. All Rights Reserved.
-          </Typography>
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            spacing={2}
+            display="flex"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Typography fontSize="12px" color="rgb(85, 101, 117)">
+              <span>Terms of Use</span>-<span>Privacy</span>-
+              <span>Cookies</span>
+            </Typography>
+            <Typography fontSize="12px" color="rgb(85, 101, 117)">
+              Copyright © 2025 Mitsogo Inc. All Rights Reserved.
+            </Typography>
+          </Stack>
         </div>
       </Box>
     </>

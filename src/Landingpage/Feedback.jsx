@@ -1,7 +1,6 @@
 import { Typography, Stack, Box, Divider } from "@mui/material";
 import React from "react";
 import Slider from "react-slick";
-import Person1 from "../assets/images/person1.png";
 import Person2 from "../assets/images/person2.png";
 import Person3 from "../assets/images/person3.png";
 
@@ -29,12 +28,19 @@ const Feedback = () => {
   };
 
   return (
-    <Box sx={{ width: "87%", margin: "auto", overflow: "hidden",paddingBottom:"50px" }}>
+    <Box
+      sx={{
+        width: "87%",
+        margin: "auto",
+        overflow: "hidden",
+        paddingBottom: "50px",
+      }}
+    >
       <Typography
         fontSize="40px"
         fontWeight="700"
         sx={{
-          width: { xs: "100%", md: "57%" },
+          width: { xs: "100%", lg: "57%" },
           margin: "auto",
           textAlign: "center",
         }}
@@ -46,22 +52,22 @@ const Feedback = () => {
 
       <Box
         sx={{
-          width: "75%",
+          width: {xs:"100%",md:"75%"},
           margin: "auto",
           border: "1px solid transparent",
           borderRadius: "10px !important",
           boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)",
           "& .slick-prev": {
-            left: "-110px !important",
+            left: { xs: "0px", md: "-110px !important" },
             zIndex: 1,
           },
           "& .slick-next": {
-            right: "-80px !important",
+            right: { xs: "15px", md: "-80px !important" },
             zIndex: 1,
           },
           "& .slick-prev:before, & .slick-next:before": {
-            fontSize: "30px", 
-            color: "#6c6c6c", 
+            fontSize: "30px",
+            color: "#6c6c6c",
           },
         }}
       >

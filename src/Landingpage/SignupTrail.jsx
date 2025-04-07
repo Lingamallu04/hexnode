@@ -18,7 +18,7 @@ const SignupTrail = () => {
         Sign up and try Hexnode free for 14 days!
       </Typography>
       <Stack
-        direction={{ xs: "column", md: "column", lg: "row" }}
+        direction={{ xs: "column", sm: "row" }}
         spacing={3}
         mt={3}
         display="flex"
@@ -29,12 +29,15 @@ const SignupTrail = () => {
           variant="outlined"
           sx={{
             borderRadius: "4px",
+            width: {
+              xs: "300px", 
+              md: "324px", 
+            },
             backgroundColor: "#fff",
             "& .MuiOutlinedInput-root": {
               color: "#6c6c6c",
               borderColor: "#fff",
               height: "52px",
-              width: "324px",
             },
             "&:hover .MuiOutlinedInput-notchedOutline": {
               borderColor: "#D9DBE1",
@@ -54,7 +57,7 @@ const SignupTrail = () => {
         mt={4}
         display="flex"
         alignItems="center"
-        justifyContent="center"
+        justifyContent={{xs:"start",sm:"center"}}
       >
         No credit cards required.
         <span style={{ color: "#dd0638", fontSize: "22px" }}>
