@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Container, Stack, Typography } from "@mui/material";
 import SecondBox from "./SecondBox";
 import Navbar from "./ResponsiveNavbar";
 import ThirdBox from "./ThirdBox";
@@ -13,7 +13,7 @@ import SpecificModes from "./SpecificModes";
 
 const LandingPage = () => {
   return (
-    <>
+    <>jj
       <Box className={styles.mainTopBox}>
         <Navbar />
       </Box>
@@ -21,25 +21,18 @@ const LandingPage = () => {
       <Box sx={{ backgroundColor: "#1a1c2b" }}>
         <ThirdBox />
       </Box>
-      <Box>
-        <SpecificModes />
-      </Box>
-      <Box>
-        <AdditionalPossibilities />
-      </Box>
+      <SpecificModes />
+      <AdditionalPossibilities />
       <Box sx={{ backgroundColor: "#f7f7f7" }}>
         <Feedback />
       </Box>
       <Box sx={{ backgroundColor: "#f7f7f7" }}>
         <LogoCarousel />
       </Box>
-      <Box>
-        <PlotformSupport />
-      </Box>
+      <PlotformSupport />
       <Box sx={{ backgroundColor: "#020919" }}>
         <SignupTrail />
       </Box>
-
       <Box sx={{ backgroundColor: "#f2f2f2" }}>
         <div
           style={{

@@ -90,7 +90,6 @@ const SpecificModes = () => {
         fontSize="36px"
         fontWeight="700"
         mb={5}
-        fontFamily="__Mulish_aeca05, __Mulish_Fallback_aeca05"
         lineHeight="45px"
         letterSpacing="normal"
       >

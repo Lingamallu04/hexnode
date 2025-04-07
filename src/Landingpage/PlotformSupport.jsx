@@ -24,7 +24,7 @@ const PlotformSupport = () => {
         margin: "auto",
         overflow: "hidden",
         textAlign: "center",
-        padding: "9rem 0rem",
+        padding: "6rem 0rem",
       }}
     >
       <Typography fontSize="40px" fontWeight="700" pb={6}>
