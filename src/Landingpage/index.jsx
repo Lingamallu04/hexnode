@@ -30,8 +30,6 @@ const LandingPage = () => {
           width: "100%",
           maxWidth: {
             xs: "100%",
-            md: "95%",
-            lg: "90%",
             xl: "1700px",
           },
         }}

@@ -71,6 +71,7 @@ const Navbar = () => {
         justifyContent: "center",
         padding: "18px 0px",
         paddingLeft: { xs: "45px", lg: 0 },
+        paddingRight: { xs: "25px", lg: 0 },
       }}
     >
       <Grid
