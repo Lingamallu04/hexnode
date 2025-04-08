@@ -20,7 +20,7 @@ const PlotformSupport = () => {
   return (
     <Box
       sx={{
-        width: "87%",
+        width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
         margin: "auto",
         overflow: "hidden",
         textAlign: "center",
@@ -45,7 +45,7 @@ const PlotformSupport = () => {
               <img
                 src={item.src}
                 alt={item.alt}
-                style={{ width: "200px", height: "auto" }}
+                style={{ width: "100%", height: "auto" }}
               />
             </Box>
           </Grid>

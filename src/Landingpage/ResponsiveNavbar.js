@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const mobileMenuDrawer = (
     <Box
-      sx={{ width: 320 ,paddingTop:"6rem"}}
+      sx={{ width: 320, paddingTop: "6rem" }}
       role="presentation"
       onKeyDown={toggleDrawer(false)}
     >
@@ -72,7 +72,7 @@ const Navbar = () => {
         container
         sx={{
           display: { xs: "none", lg: "flex" },
-          width: "87%",
+          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
           margin: "auto",
         }}
         justifyContent="space-between"
@@ -88,7 +88,12 @@ const Navbar = () => {
       <Grid
         container
         sx={{
-          display: { xs: "flex", lg: "none", width: "87%", margin: "auto" },
+          display: {
+            xs: "flex",
+            lg: "none",
+            width: "87%",
+            margin: "auto",
+          },
         }}
         justifyContent="space-between"
         alignItems="center"

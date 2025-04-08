@@ -9,17 +9,17 @@ const SecondBox = () => {
       style={{
         paddingTop: "10rem 0rem 8rem 0rem",
         backgroundColor: "#020919",
-        marginTop: "70px",
       }}
     >
       <Grid
         container
         sx={{
-          width: "87%",
+          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
           margin: "auto",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          marginTop: { xs: "70px", lg: 0 },
         }}
         spacing={8}
       >

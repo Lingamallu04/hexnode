@@ -7,7 +7,7 @@ const SignupTrail = () => {
   return (
     <Box
       sx={{
-        width: "87%",
+        width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
         margin: "auto",
         overflow: "hidden",
         textAlign: "center",
@@ -30,8 +30,8 @@ const SignupTrail = () => {
           sx={{
             borderRadius: "4px",
             width: {
-              xs: "300px", 
-              md: "324px", 
+              xs: "300px",
+              md: "324px",
             },
             backgroundColor: "#fff",
             "& .MuiOutlinedInput-root": {
@@ -57,7 +57,7 @@ const SignupTrail = () => {
         mt={4}
         display="flex"
         alignItems="center"
-        justifyContent={{xs:"start",sm:"center"}}
+        justifyContent={{ xs: "start", sm: "center" }}
       >
         No credit cards required.
         <span style={{ color: "#dd0638", fontSize: "22px" }}>

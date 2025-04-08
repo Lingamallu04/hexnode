@@ -13,20 +13,43 @@ import SpecificModes from "./SpecificModes";
 
 const LandingPage = () => {
   return (
-    <>jj
+    <>
       <Box className={styles.mainTopBox}>
         <Navbar />
       </Box>
       <SecondBox />
-      <Box sx={{ backgroundColor: "#1a1c2b" }}>
+      <Box
+        sx={{
+          backgroundColor: "#1a1c2b",
+        }}
+      >
         <ThirdBox />
       </Box>
-      <SpecificModes />
-      <AdditionalPossibilities />
+      <Box
+        sx={{
+          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
+          margin: "auto",
+        }}
+      >
+        <SpecificModes />
+      </Box>
+      <Box
+        sx={{
+          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
+          margin: "auto",
+        }}
+      >
+        <AdditionalPossibilities />
+      </Box>
+
       <Box sx={{ backgroundColor: "#f7f7f7" }}>
         <Feedback />
       </Box>
-      <Box sx={{ backgroundColor: "#f7f7f7" }}>
+      <Box
+        sx={{
+          backgroundColor: "#f7f7f7",
+        }}
+      >
         <LogoCarousel />
       </Box>
       <PlotformSupport />
@@ -34,9 +57,9 @@ const LandingPage = () => {
         <SignupTrail />
       </Box>
       <Box sx={{ backgroundColor: "#f2f2f2" }}>
-        <div
-          style={{
-            width: "87%",
+        <Box
+          sx={{
+            width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
             margin: "auto",
             padding: "30px 0px",
           }}
@@ -56,7 +79,7 @@ const LandingPage = () => {
               Copyright © 2025 Mitsogo Inc. All Rights Reserved.
             </Typography>
           </Stack>
-        </div>
+        </Box>
       </Box>
     </>
   );

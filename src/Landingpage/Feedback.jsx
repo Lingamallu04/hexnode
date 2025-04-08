@@ -30,7 +30,7 @@ const Feedback = () => {
   return (
     <Box
       sx={{
-        width: "87%",
+        width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
         margin: "auto",
         overflow: "hidden",
         paddingBottom: { xs: "13rem", md: "5rem" },

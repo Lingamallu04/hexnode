@@ -79,8 +79,7 @@ const SpecificModes = () => {
   return (
     <div
       style={{
-        width: "87%",
-        margin: "auto",
+        width: "100%",
         overflow: "hidden",
         textAlign: "center",
         padding: "5rem 0rem",

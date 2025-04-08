@@ -44,7 +44,7 @@
   font-size: 42px !important;
   font-weight: 700 !important;
   color: #fff;
-  margin-bottom: 16px ;
+  margin-bottom: 16px;
   line-height: 140% !important;
 }
 
@@ -62,8 +62,6 @@
 }
 
 .thirdBox {
-  width: 87%;
-  margin: auto !important;
   background-color: #1a1c2b;
 }
 
