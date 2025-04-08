@@ -98,11 +98,11 @@ const LogoCarousel = () => {
   return (
     <Box
       sx={{
-        width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
+        width: "90%",
         margin: "auto",
         overflow: "hidden",
         textAlign: "center",
-        padding: "5rem 0rem 10rem 0rem",
+        padding: "5rem 0rem 10rem 6rem",
       }}
     >
       <Box mb="30px">

@@ -13,7 +13,7 @@ const ThirdBox = () => {
         container
         sx={{
           padding: "30px 0px",
-          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
+          width: "90%",
           margin: "auto",
         }}
         spacing={{ xs: 3, md: 1 }}

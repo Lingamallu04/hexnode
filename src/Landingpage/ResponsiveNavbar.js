@@ -54,7 +54,7 @@ const Navbar = () => {
   const textColor = isScrolled || isHovered ? "#000" : "#fff";
   return (
     <Box
-      className={styles.topNav}
+      className={styles.navbar}
       position="fixed"
       zIndex={9999}
       onMouseEnter={() => setIsHovered(true)}
@@ -62,17 +62,22 @@ const Navbar = () => {
       sx={{
         top: 0,
         width: "100%",
+        maxWidth: "1700px",
         transition: "background-color 0.3s ease, color 0.3s ease",
         backgroundColor,
         boxShadow:
           isScrolled || isHovered ? "0 2px 8px rgba(0,0,0,0.1)" : "none",
+        display: "flex",
+        justifyContent: "center",
+        padding: "18px 0px",
+        paddingLeft: { xs: "45px", lg: 0 },
       }}
     >
       <Grid
         container
         sx={{
           display: { xs: "none", lg: "flex" },
-          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
+          width: "90%",
           margin: "auto",
         }}
         justifyContent="space-between"
@@ -91,7 +96,7 @@ const Navbar = () => {
           display: {
             xs: "flex",
             lg: "none",
-            width: "87%",
+            width: "100%",
             margin: "auto",
           },
         }}

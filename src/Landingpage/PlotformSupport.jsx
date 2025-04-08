@@ -20,7 +20,7 @@ const PlotformSupport = () => {
   return (
     <Box
       sx={{
-        width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
+        width: "90%",
         margin: "auto",
         overflow: "hidden",
         textAlign: "center",

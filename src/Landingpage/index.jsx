@@ -13,75 +13,96 @@ import SpecificModes from "./SpecificModes";
 
 const LandingPage = () => {
   return (
-    <>
-      <Box className={styles.mainTopBox}>
-        <Navbar />
-      </Box>
-      <SecondBox />
+    <Box
+      sx={{
+        overflowX: "hidden",
+        display: "flex",
+        justifyContent: {
+          xs: "flex-start",
+          lg: "center",
+        },
+      }}
+    >
       <Box
         sx={{
-          backgroundColor: "#1a1c2b",
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          maxWidth: {
+            xs: "100%",
+            md: "95%",
+            lg: "90%",
+            xl: "1700px",
+          },
         }}
       >
-        <ThirdBox />
-      </Box>
-      <Box
-        sx={{
-          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
-          margin: "auto",
-        }}
-      >
-        <SpecificModes />
-      </Box>
-      <Box
-        sx={{
-          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
-          margin: "auto",
-        }}
-      >
-        <AdditionalPossibilities />
-      </Box>
-
-      <Box sx={{ backgroundColor: "#f7f7f7" }}>
-        <Feedback />
-      </Box>
-      <Box
-        sx={{
-          backgroundColor: "#f7f7f7",
-        }}
-      >
-        <LogoCarousel />
-      </Box>
-      <PlotformSupport />
-      <Box sx={{ backgroundColor: "#020919" }}>
-        <SignupTrail />
-      </Box>
-      <Box sx={{ backgroundColor: "#f2f2f2" }}>
+        <Box sx={{ width: "100%", margin: "auto" }}>
+          <Navbar />
+        </Box>
+        <SecondBox />
         <Box
           sx={{
-            width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
-            margin: "auto",
-            padding: "30px 0px",
+            backgroundColor: "#1a1c2b",
           }}
         >
-          <Stack
-            direction={{ xs: "column", sm: "row" }}
-            spacing={2}
-            display="flex"
-            justifyContent="space-between"
-            alignItems="center"
+          <ThirdBox />
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "#f7f7f7",
+          }}
+        >
+          <SpecificModes />
+        </Box>
+        <Box
+          sx={{
+            paddingBottom: "3rem",
+          }}
+        >
+          <AdditionalPossibilities />
+        </Box>
+
+        <Box sx={{ backgroundColor: "#f7f7f7" }}>
+          <Feedback />
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "#f7f7f7",
+          }}
+        >
+          <LogoCarousel />
+        </Box>
+        <PlotformSupport />
+        <Box sx={{ backgroundColor: "#020919" }}>
+          <SignupTrail />
+        </Box>
+        <Box sx={{ backgroundColor: "#f2f2f2" }}>
+          <Box
+            sx={{
+              width: "90%",
+              margin: "auto",
+              padding: "30px 0px",
+            }}
           >
-            <Typography fontSize="12px" color="rgb(85, 101, 117)">
-              <span>Terms of Use</span>-<span>Privacy</span>-
-              <span>Cookies</span>
-            </Typography>
-            <Typography fontSize="12px" color="rgb(85, 101, 117)">
-              Copyright © 2025 Mitsogo Inc. All Rights Reserved.
-            </Typography>
-          </Stack>
+            <Stack
+              direction={{ xs: "column", sm: "row" }}
+              spacing={2}
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+            >
+              <Typography fontSize="12px" color="rgb(85, 101, 117)">
+                <span>Terms of Use</span>-<span>Privacy</span>-
+                <span>Cookies</span>
+              </Typography>
+              <Typography fontSize="12px" color="rgb(85, 101, 117)">
+                Copyright © 2025 Mitsogo Inc. All Rights Reserved.
+              </Typography>
+            </Stack>
+          </Box>
         </Box>
       </Box>
-    </>
+    </Box>
   );
 };
 

@@ -14,7 +14,7 @@ const SecondBox = () => {
       <Grid
         container
         sx={{
-          width: { xs: "87%", lg: "80%", xl: "65%", xxl: "50%" },
+          width: "90%",
           margin: "auto",
           display: "flex",
           justifyContent: "space-between",

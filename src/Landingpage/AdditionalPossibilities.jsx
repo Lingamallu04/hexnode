@@ -53,7 +53,7 @@ const AdditionalPossibilities = () => {
   };
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "90%", margin: "auto" }}>
       <Typography
         fontSize="40px"
         fontWeight="700"
